@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  margin: 2em;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.7em;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#recettes-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#recettes-liste li {
+  background-color: #fff;
+  padding: 1em;
+  margin: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 1em);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+#recettes-liste li img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.recette-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.recette-actions button {
+  margin-left: 0.5em;
+  background-color: #ff5722;
+  border: none;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.recette-actions button.modify {
+  background-color: #2196f3;
+}
+
+.recette-actions button:hover {
+  opacity: 0.8;
+}
+
+#recettes-liste li.incomplete {
+  transform: scale(0.8);
+  opacity: 0.7;
+}
